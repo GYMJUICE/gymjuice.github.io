@@ -1,0 +1,23 @@
+body {
+    background-color: red;
+}
+div {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+#predefined-colors {
+    background-color: violet;
+}
+#hexadecimal-colors {
+    background-color: #ffff00;
+}
+#short-hexadecimal-colors {
+    background-color: #f5d;
+}
+#rgb-function {
+    background-color: rgb(160, 145, 40);
+}
+#rgba-function {
+    background-color: rgb(250, 133, 200, 0.5);
+}
