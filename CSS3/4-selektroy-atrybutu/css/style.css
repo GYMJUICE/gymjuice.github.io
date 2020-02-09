@@ -20,3 +20,9 @@
     color: indigo;
     background-color: lawngreen;
 }
+nav > ul > li > a [title*="oll"] {
+    background-color: lightcoral;
+}
+nav > ul > li > a [title*="oll"]:hover {
+    background-color: yellow;
+}
