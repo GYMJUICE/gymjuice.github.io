@@ -1,0 +1,15 @@
+p {
+    background-color: peru !important;
+} 
+p#paragraph {
+    background-color: orchid;
+}
+p.paragraph {
+    background-color: yellowgreen;
+}
+p {
+    background-color: blue;
+}
+
+/* important nie stosujemy raczej bo góruje nad wszystkim innym
+Potem jest w kolejności id, class i selektroy znacznikow
