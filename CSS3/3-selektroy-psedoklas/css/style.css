@@ -1,0 +1,7 @@
+#send:hover {
+    background-color: seagreen;
+}
+#name:focus {
+    border: 5px solid green;
+    background-color: greenyellow;
+}
