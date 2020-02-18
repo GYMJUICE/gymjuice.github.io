@@ -89,3 +89,23 @@ body {
 #contact #contact-content a:hover {
   color: #999;
 }
+
+/*---------zadanie ze skryptu tu sie zaczyna-----------*/
+
+#gallery {
+    width: 80%;
+  }
+}
+figure {
+  width: 33%;
+}
+@media (min-width: 993px) {
+  #gallery {
+    width: 90%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  figure {
+    width: 49%;
+  }
+}
