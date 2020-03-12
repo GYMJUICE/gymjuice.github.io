@@ -1,0 +1,88 @@
+ div.counting {
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    margin: 20px;
+}
+.box {
+      color: white;
+      font-size: 100px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
+      position: absolute;
+      left:0;
+      right:0;
+      padding-top: 15%;
+}
+.napis, .liczba1, .liczba2, .liczba3, .liczba4, .liczba5, .liczba6, .liczba7, .liczba8, .liczba9, .liczba10 {
+      visibility: hidden;
+}
+@keyframes odliczanie {
+    0%{
+        visibility: hidden;
+    }
+    99%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes lovecss {
+    0%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+  .liczba10 {
+      animation: 1s odliczanie;
+      animation-fill-mode: forwards;
+  }
+  .liczba9 {
+    animation: 1s odliczanie;
+    animation-delay: 1s;
+  }
+  .liczba8 {
+    animation: 1s odliczanie;
+    animation-delay: 2s;
+  }
+  .liczba7 {
+    animation: 1s odliczanie;
+    animation-delay: 3s;
+  }
+  .liczba6 {
+    animation: 1s odliczanie;
+    animation-delay: 4s;
+  }
+  .liczba5 {
+    animation: 1s odliczanie;
+    animation-delay: 5s;
+  }
+  .liczba4 {
+    animation: 1s odliczanie;
+    animation-delay: 6s;
+  }
+  .liczba3 {
+    animation: 1s odliczanie;
+    animation-delay: 7s;
+  }
+  .liczba2 {
+    animation: 1s odliczanie;
+    animation-delay: 8s;
+  }
+  .liczba1 {
+    animation: 1s odliczanie;
+    animation-delay: 9s;
+  }
+  .napis {
+    animation: 5s lovecss;
+    animation-delay: 10s;
+  }
+
+
+
+
