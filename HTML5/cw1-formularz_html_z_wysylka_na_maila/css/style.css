@@ -1,0 +1,104 @@
+body {
+    box-sizing: border-box;
+    font-size: 7px;
+    background-color: rgb(252, 230, 203);
+}
+.container {
+    background-color: ivory;
+    margin: 0 auto;
+    border: 1px solid silver;
+    width: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* dwukrotność czcionki wyjściowej podanej w body */
+    font-size: 2em; 
+    padding: 20px;
+    text-transform: uppercase;
+}
+.formularz {
+    display: flex;
+    flex-direction: column;
+}
+form input[type="email"], input[type="number"], input[type="text"], input[type="datetime-local"], input[type="password"], input[type="search"], input[type="url"] {
+    background-color: white;
+    border: 1px solid lightgray;
+    outline: none;
+}
+form input:focus{
+    background-color: rgb(241, 255, 119);
+    outline: none;
+}
+
+.ramka {
+    padding: 10px; 
+     
+}
+.elemCenter{
+    margin: 0 auto;
+    text-align: center;
+}
+.kolor {
+    border: 0px;
+    background-color: ivory;
+    width: 200px;
+    text-align: center;
+}
+
+/* stylowanie file */
+  form input[type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+  }  
+  form input[type="file"] + label {
+  background: #f15d22;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+  }
+  form input:hover[type="file"] + label:hover{
+      background-color: rgb(65, 65, 65);
+  }
+/* koniec stylowania file */
+
+form input[type="submit"] { 
+    background: #f15d22;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px; 
+    cursor: pointer;  
+    padding: 1rem 50px;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+form input:hover[type="submit"]{
+    background-color: rgb(65, 65, 65);
+}
+textarea {
+    max-width: 600px;
+}
+textarea:focus {
+    background-color: rgb(241, 255, 119);
+    outline: none;
+}
+
+.rowDistance {
+    margin-top: 15px;
+    outline: none;
+}
+
+
+
+

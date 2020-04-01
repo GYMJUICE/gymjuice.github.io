@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz z wysyłką formspree.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FORMULARZ OPCJI</h1>
+        <form action="https://formspree.io/pawel.migo@gmail.com" method="POST" class="formularz">
+            <label for="imie">Imię</label>
+            <input type="text" name="" id="" class="ramka">
+
+            <label for="nazwisko" class="rowDistance">Nazwisko</label>
+            <input type="text" name="nazwisko" id="" class="ramka">
+
+            <label for="kolor" class="kolor elemCenter rowDistance">Wybierz swój ulubiony kolor</label>
+            <input type="color" name="kolor" id="" class="kolor elemCenter">
+
+            <label for="datagodzina" class="rowDistance">Podaj aktualną datę z godziną</label>
+            <input type="datetime-local" name="datagodzina" id="" class="ramka">
+
+            <label for="email" class="rowDistance">Podaj swój adres e-mail</label>
+            <input type="email" name="email" id="" placeholder="np: jankowalski@twojapoczta.pl" class="ramka">
+            
+            <label class="elemCenter rowDistance">Wczytaj swoje zdjęcie</label>
+            <div class="elemCenter">     
+                <input type="file" id="file">
+                <label for="file">wybierz plik</label>
+            </div>
+            
+            <label for="numer" class="rowDistance">Podaj swój szczęśliwy numer</label>
+            <input type="number" name="numer" id="numer" class="ramka">
+
+            <label for="haslo" class="rowDistance">Podaj hasło</label>
+            <input type="password" name="haslo" id="haslo" class="ramka">
+        
+        <div class="elemCenter">
+            <p class="rowDistance elemCenter"><b>Wybierz miasto w którym mieszkasz</b></p>
+            <!-- atrybut name powinien byc taki sam w przeciwnym razie będzie możliwość zaznaczenia kilku miast -->
+            <label for="krakow">Kraków</label>
+            <input type="radio" name="miasto" id="krakow">
+            <label for="warszawa">Warszawa</label>
+            <input type="radio" name="miasto" id="warszawa">
+            <label for="gdansk" >Gdańsk</label>
+            <input type="radio" name="miasto" id="gdansk">
+            <label for="inne">inne</label>
+            <input type="radio" name="miasto" id="inne">
+        </div>
+
+            <label for="skala" class="rowDistance">Jak widzisz swoja wiedzę w skali 0 - 100pkt?</label>
+            <input type="range" name="skala" id="skala">
+
+            <label for="szukaj" class="rowDistance">Szukaj</label>
+            <input type="search" name="szukaj" id="szukaj" class="ramka">
+
+            <label for="adresurl" class="rowDistance">Podaj adres url swojej ulubionej strony</label>
+            <input type="url" name="adresurl" id="adresurl" class="ramka">
+
+            <label for="poziom" class="rowDistance">Poziom zaawansowania html</label>
+            <!-- nie działa w Edge 12 i wcześniejszych -->
+            <meter id="disk_d" value="0.6" class="town">60%</meter> 
+
+            <label for="loading" class="rowDistance">Szybkość wczytywania strony</label>
+            <progress id="loading" value="80" max="100" class="town">100%</progress>
+
+            <label for="whisky" class="rowDistance">Wybierz ulubioną whisky</label>
+            <select name="whisky" id="whisky" class="ramka">
+                <option value="lagavulin">Lagavulin 16YO</option>
+                <option value="ardbeg">Ardbeg Ten</option>
+                <option value="hp">Highland Park 16YO</option>
+            </select>
+
+            <label for="polewolne" class="rowDistance">Wpisz swój komentarz</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="komentarz..." class="komentarz"></textarea>
+            
+            <div class="elemCenter">
+                <input type="submit" value="Wyślij formularz">
+                <!-- <label for="submit">Wyślij formularz</label>         -->
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- OPIS ZADANIA OGÓLNY
+
+    Stwórz formularz, który pozwoli na zapis uczestnika na szkolenie - pola:
+
+- imię
+- nazwisko
+- mail
+- telefon
+- wybór miasta (Kraków, Warszawa, Gdańsk) - select
+- płeć - radio
+- zgoda na dane osobowe - checkbox
+- wiadomość - textarea
+
+Zadanie wyślij za pomocą GitHub Pages.
+
+Podpowiedź przed wysłaniem zadania do sprawdzenia:
+- sprawdź dopasowanie labelek do pól formularza
+- sprawdź, czy formularz wysyła maile na Twój adres z wykorzystaniem serwisu https://formspree.io/
+- sprawdź poprawność składni w walidatorze W3C https://validator.w3.org/ 
+
+Postaraj sie wykorzystać możliwie najwięcej wariantów inputów
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="search">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<meter>
+<progress>
+<select>
+<textarea>
+
+-->
